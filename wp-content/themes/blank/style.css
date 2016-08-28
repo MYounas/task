@@ -909,12 +909,26 @@ li {
 	list-style: none;
 }
 
-.btn-design {
-	border: 0;
-	background: #C2341C;
-	color: white;
-	box-shadow: none;
-	border-radius: 0px;
+.red-btn-design {
+	border: 0 !important;
+	background: #C2341C !important;
+	color: white !important;
+	box-shadow: none !important;
+	border-radius: 0px !important;
+}
+
+.blue-btn-design {
+	background: #224697 !important;
+	color: white !important;
+	box-shadow: none !important;
+	border-radius: 0px !important;
+}
+
+.box-design{
+	/*background: #224697 !important;*/
+	color: white !important;
+	box-shadow: none !important;
+	border-radius: 0px !important;
 }
 
 #banner img {
@@ -928,16 +942,22 @@ li {
 
 #search {
 	float: left;
-	margin: 50px 10px;
+	padding-top: 69px;
+	padding-left: 225px;
 }
 
 #sign-in {
 	display: block;
 	float: right;
 	background: #F2F2F2;
-	padding-top: 25px;
 	padding-left: 10px;
 	padding-right: 10px;
+	width: 298px;
+	line-height: 0;
+}
+
+#sign-in input:not([type='submit']){
+	width: 116px;
 }
 
 #foot {
@@ -969,7 +989,6 @@ li {
 }
 
 nav {
-	/*    border-top: 1px solid #F1D2D3;*/
 	margin-top: 10px;
 	font-size: 17px;
 	margin-bottom: 30px;
@@ -986,17 +1005,11 @@ nav li a {
 	color: #D0614F;
 }
 
-#feauterd{
+#featured{
 	width: 100%;
+	border-bottom: 1px dotted #a7a7a7;
+	padding-bottom: 22px;
 }
-
-/*
-#main {
-    display: inline-block;
-    border: 1px solid #FFFFFF;
-    overflow: auto;
-}
-*/
 
 #main {
 	width: 75%;
@@ -1008,7 +1021,6 @@ nav li a {
 aside {
 	float: right;
 	width: 23% !important;
-	margin-top: 20px;
 }
 
 #main #left {
@@ -1042,18 +1054,49 @@ aside #bottom {
 
 #services {
 	clear: both;
+	margin-top: 15px;
+	border-bottom: 1px dotted #a7a7a7;
 }
 
-#clients {
-	margin: auto;
+#services img{
+	padding-right:50px;
 }
 
 #services img{
 	margin-right: 15px;
 }
 
+#clients {
+	margin-top: 12px;
+	margin-bottom: 15px;
+}
+
+#clients #next{
+	color: #FFFFFF;
+	background:transparent url("images/logo-slider-next-icon.png") no-repeat;
+	padding-top: 40px;
+}
+
+#clients #prev{
+	color: #FFFFFF;
+	background:transparent url("images/logo-slider-prev-icon.png") no-repeat;
+	display: inline-block;
+	padding-top: 33px;
+}
+
+#clients #next:hover{
+	opacity:0;
+	cursor: pointer;
+}
+
+#clients #prev:hover{
+	opacity:0;
+	cursor: pointer;
+}
+
 #clients img{
-	margin-right: 15px;
+	margin-right: 5px;
+	margin-left: 8px;
 }
 
 footer {
@@ -1078,10 +1121,6 @@ footer .wrapper{
 
 #head h3 {
 	padding-top: 20px;
-	/*
-    padding-left: 20px;
-    padding-right: 20px;
-*/
 }
 
 footer #head h3:nth-child(1) {

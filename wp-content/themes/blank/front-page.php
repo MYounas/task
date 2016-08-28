@@ -18,7 +18,7 @@ get_header(); ?>
 <!--        <main id="main" class="site-main" role="main">-->
             <div id="content" class="wrapper">
                 <h1>NOTICAS/</h1>
-                <div id="feauterd">
+                <div id="featured" class="fill-content">
                     <section id="main" class="fill-content">
                         <div id="left">
                             <img src="<?=get_template_directory_uri();?>/images/home_main_section_left_image.jpg">
@@ -47,16 +47,16 @@ get_header(); ?>
                     <aside>
                         <div class="wrapper">
                             <div id="top">
-                                <p> type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                                <p>type and scrambled it to make a type specimen book. It has survived not only five centurieso</p>
                             </div>
                             <div id="bottom">
-                                <p> type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                                <p>type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                                <input type="text"><input type="submit" class="blue-btn-design" value="Subscribe">
                             </div>
                         </div>
                     </aside>
                 </div>
                 <section id="services">
-                    <hr>
                     <img src="<?=get_template_directory_uri();?>\images\home_service-1.jpg">
                     <img src="<?=get_template_directory_uri();?>\images\home_service-2.jpg">
                     <img src="<?=get_template_directory_uri();?>\images\home_service-3.jpg">
@@ -66,13 +66,14 @@ get_header(); ?>
                     <img src="<?=get_template_directory_uri();?>\images\home_service-7.jpg">
                     <img src="<?=get_template_directory_uri();?>\images\home_service-8.jpg">
                 </section>
-                <hr>
-                <section id="clients">
+                <section id="clients" class="fill-content">
+                    <a id="prev" class="fill-content"><</a>
                     <img src="<?=get_template_directory_uri();?>\images\client-1.jpg">
                     <img src="<?=get_template_directory_uri();?>\images\client-2.jpg">
                     <img src="<?=get_template_directory_uri();?>\images\client-3.jpg">
                     <img src="<?=get_template_directory_uri();?>\images\client-4.jpg">
                     <img src="<?=get_template_directory_uri();?>\images\client-5.jpg">
+                    <a id="next" class="fill-content">></a>
                 </section>
             </div>
 

@@ -16,6 +16,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<script src="<?=get_template_directory_uri();?>/js/jquery-3.1.0.js"></script>
+
 
 <?php wp_head(); ?>
 </head>
@@ -31,13 +33,14 @@
 					<img src="<?=get_template_directory_uri();?>/images/logo.jpg">
 				</div>
 				<div id="search">
-					<input type="text" placeholder="Search"">
-<!--					<img src="--><?//=get_template_directory_uri();?><!--/images/search.png" style="width:22px">-->
+					<input type="text" placeholder="Search" class="box-design" style="width: 116px">
+					<img src="<?=get_template_directory_uri();?>/images/search.png" style="width:22px">
 				</div>
 				<div id="sign-in">
-					<input type="text" placeholder="Login">
-					<input type="password" placeholder="password">
-					<input type="submit" value="ok" class="btn-design">
+					<p>signin credenntails</p>
+					<input type="text" placeholder="Login" class="box-design">
+					<input type="password" placeholder="password" class="box-design">
+					<input type="submit" value="ok" class="red-btn-design">
 					<p>Escused a senhai</p>
 				</div>
 				<div id="foot">
