@@ -18,7 +18,6 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script src="<?=get_template_directory_uri();?>/js/jquery-3.1.0.js"></script>
 
-
 <?php wp_head(); ?>
 </head>
 
@@ -30,7 +29,7 @@
 		<div class="wrapper">
 			<div id="top-header">
 				<div id="logo">
-					<img src="<?=get_template_directory_uri();?>/images/logo.jpg">
+                    <a href="http://localhost/task"><img src="<?=get_template_directory_uri();?>/images/logo.jpg"></a>
 				</div>
 				<div id="search">
 					<input type="text" placeholder="Search" class="box-design" style="width: 116px">
@@ -58,12 +57,12 @@
 			</div>
 			<nav class="fill-content">
 				<ul>
-					<li><a href="#">QUEM SOMOS</a></li>
-					<li><a href="#">FALE CONOSCO</a></li>
+					<li><a href="http://localhost/task/quem-somos">QUEM SOMOS</a></li>
+					<li><a href="http://localhost/task/fale-conosco">FALE CONOSCO</a></li>
 				</ul>
 			</nav>
 			<div id="banner">
-				<img src="<?=get_template_directory_uri();?>/images/home-banner.jpg">
+				<img src="<?=get_template_directory_uri();?>/images/banner-all.jpg">
 			</div>
 		</div>
 	</header>

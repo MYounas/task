@@ -12,34 +12,94 @@
  * @package blank
  */
 
-get_header(); ?>
+//get_header(); ?>
+
+<html <?php language_attributes(); ?>>
+    <head>
+        <meta charset="<?php bloginfo( 'charset' ); ?>">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+        <script src="<?=get_template_directory_uri();?>/js/jquery-3.1.0.js"></script>
+
+        <?php wp_head(); ?>
+    </head>
+
+<body <?php body_class(); ?>>
+<div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'blank' ); ?></a>
+
+    <header>
+        <div class="wrapper">
+            <div id="top-header">
+                <div id="logo">
+                    <a href="http://localhost/task"><img src="<?=get_template_directory_uri();?>/images/logo.jpg"></a>
+                </div>
+                <div id="search">
+                    <input type="text" placeholder="Search" class="box-design" style="width: 116px">
+                    <img src="<?=get_template_directory_uri();?>/images/search.png" style="width:22px">
+                </div>
+                <div id="sign-in">
+                    <p>signin credenntails</p>
+                    <input type="text" placeholder="Login" class="box-design">
+                    <input type="password" placeholder="password" class="box-design">
+                    <input type="submit" value="ok" class="red-btn-design">
+                    <p>Escused a senhai</p>
+                </div>
+                <div id="foot">
+                    <div id="left">
+                        <ul>
+                            <li>Muhammad Younas</li>
+                            <li>HAris Zafar</li>
+                            <li>Usama Imran</li>
+                            <img src="<?=get_template_directory_uri();?>/images/abc-icon.png">
+                            <img src="<?=get_template_directory_uri();?>/images/twitter-icon.png">
+                            <img src="<?=get_template_directory_uri();?>/images/facebook-icon.png">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav class="fill-content">
+                <ul>
+                    <li><a href="http://localhost/task/quem-somos">QUEM SOMOS</a></li>
+                    <li><a href="http://localhost/task/fale-conosco">FALE CONOSCO</a></li>
+                </ul>
+            </nav>
+            <div id="banner">
+                <img src="<?=get_template_directory_uri();?>/images/home-banner.jpg">
+            </div>
+        </div>
+    </header>
+
+    <div id="content" class="site-content wrapper">
 
 <!--    <div id="primary" class="content-area">-->
 <!--        <main id="main" class="site-main" role="main">-->
             <div id="content" class="wrapper">
                 <h1>NOTICAS/</h1>
+
                 <div id="featured" class="fill-content">
                     <section id="main" class="fill-content">
                         <div id="left">
                             <img src="<?=get_template_directory_uri();?>/images/home_main_section_left_image.jpg">
                             <h2>continuerr</h2>
-                            <p>industry. Lorem Ipsum has been the industry's standard dummy </p>
+                            <p>industry. Lorem Ipsum has been the industry's standard dummy <a href="http://localhost/task/detail-1">go next</a></p>
                         </div>
                         <div id="right">
                             <ul>
                                 <li>
                                     <h2>PRSO SALARIAL</h2>
-                                    <p>ext ever since the 1500s, when an unknown printer took a</p>
+                                    <p>ext ever since the 1500s, when an unknown printer took a <a href="http://localhost/task/detail-1">go next</a></p>
                                 </li>
                                 <hr>
                                 <li>
                                     <h2>PRSO SALARIAL</h2>
-                                    <p>ext ever since the 1500s, when an unknown printer took a</p>
+                                    <p>ext ever since the 1500s, when an unknown printer took a <a href="http://localhost/task/detail-1">go next</a></p>
                                 </li>
                                 <hr>
                                 <li>
                                     <h2>PRSO SALARIAL</h2>
-                                    <p>ext ever since the 1500s, when an unknown printer took a</p>
+                                    <p>ext ever since the 1500s, when an unknown printer took a <a href="http://localhost/task/detail-1">go next</a></p>
                                 </li>
                             </ul>
                         </div>
@@ -51,7 +111,8 @@ get_header(); ?>
                             </div>
                             <div id="bottom">
                                 <p>type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-                                <input type="text"><input type="submit" class="blue-btn-design" value="Subscribe">
+                                <input type="text" class="box-design"style="width: 130px">
+                                <input type="submit" class="blue-btn-design" value="Subscribe">
                             </div>
                         </div>
                     </aside>
@@ -81,5 +142,5 @@ get_header(); ?>
 <!--    </div>-->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();
