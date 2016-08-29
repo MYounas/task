@@ -36,8 +36,10 @@
                     <a href="http://localhost/task"><img src="<?=get_template_directory_uri();?>/images/logo.jpg"></a>
                 </div>
                 <div id="search">
-                    <input type="text" placeholder="Search" class="box-design" style="width: 116px">
-                    <img src="<?=get_template_directory_uri();?>/images/search.png" style="width:22px">
+                    <form action="http://localhost/task/" id="searchform" method="get">
+                        <input type="text" placeholder="Search" name="s" id="s" class="box-design" style="width: 116px">
+                        <input type="submit" value="Search" class="search-btn">
+                    </form>
                 </div>
                 <div id="sign-in">
                     <p>signin credenntails</p>

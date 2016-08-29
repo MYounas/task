@@ -278,7 +278,7 @@ h3,
 h4,
 h5,
 h6 {
-    clear: both;
+    /* clear: both; */
 }
 
 p {
@@ -912,6 +912,18 @@ h6 {
 
 li {
     list-style: none;
+}
+
+.search-btn{
+    background-color: transparent!important;
+    background-image: url("images/search5.gif") !important;
+    background-position: 0 0 !important;
+    background-repeat: no-repeat !important;
+    border: 0 none !important;
+    cursor: pointer !important;
+    height: 34px !important;
+    text-indent: -9999px !important;
+    width: 31px !important;
 }
 
 .red-btn-design {
