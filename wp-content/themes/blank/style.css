@@ -1181,7 +1181,7 @@ section.fale {
 
 section #contacts {
     float: right;
-    /* margin-right: 150px; */
+    margin-right: 150px;
     line-height: 0.5em;
 }
 
@@ -1240,4 +1240,36 @@ section#map {
 
 .setor ul li a{
     padding: 3px 10px;
+}
+
+/*////Contact form7 css//////*/
+
+.wpcf7-form input:not([type="submit"]){
+    background-color: #d7d7d7;
+    border: 0 none;
+    color: #c5341c;
+    font-size: 13.9px;
+    font-weight: 300;
+    height: 28px;
+    line-height: 14px;
+    padding: 6px 10px;
+    width: 470px;
+}
+
+.wpcf7-form textarea{
+    background-color: #d7d7d7;
+    border: 0 none;
+    color: #c5341c !important;
+    font-size: 13.9px;
+    font-weight: 300;
+    line-height: 14px;
+    padding: 6px 10px;
+}
+
+.wpcf7-form input[type="submit"]{
+    border: 0 !important;
+    background: #C2341C !important;
+    color: white !important;
+    box-shadow: none !important;
+    border-radius: 0px !important;
 }

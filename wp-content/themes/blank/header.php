@@ -38,11 +38,19 @@
                     </form>
 				</div>
 				<div id="sign-in">
-					<p>signin credenntails</p>
-					<input type="text" placeholder="Login" class="box-design">
-					<input type="password" placeholder="password" class="box-design">
-					<input type="submit" value="ok" class="red-btn-design">
-					<p>Escused a senhai</p>
+                    <?php if(!is_user_logged_in()){ ?>
+                    <form action="http://localhost/task/wp-login.php" method="post">
+                        <p>signin credenntails</p>
+                        <input type="text" placeholder="Login" name="log" id="user_login" class="box-design">
+                        <input type="password" placeholder="password" name="pwd" id="user_pass" class="box-design">
+                        <input type="submit" value="ok" name="user-submit" class="red-btn-design">
+                        <input type="hidden" name="redirect_to" value="/task/<?php global $post;echo $post->post_name; ?>/">
+                        <input type="hidden" name="user-cookie" value="1">
+                        <p>Escused a senhai</p>
+                    </form>
+                    <?php } else{ ?>
+                    <p>Welcome <?php print_r( wp_get_current_user()->user_login); }?>!</p>
+
 				</div>
 				<div id="foot">
 					<div id="left">
