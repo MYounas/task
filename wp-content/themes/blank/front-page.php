@@ -33,24 +33,28 @@
         <div class="wrapper">
             <div id="top-header">
                 <div id="logo">
-                    <a href="http://localhost/task"><img src="<?=get_template_directory_uri();?>/images/logo.jpg"></a>
+                    <a href="<?=get_home_url();?>"><img src="<?=get_template_directory_uri();?>/images/logo.jpg"></a>
                 </div>
                 <div id="search">
-                    <form action="http://localhost/task/" id="searchform" method="get">
+                    <form action="<?=get_home_url();?>/" id="searchform" method="get">
                         <input type="text" placeholder="Search" name="s" id="s" class="box-design" style="width: 116px">
                         <input type="submit" value="Search" class="search-btn">
                     </form>
                 </div>
                 <div id="sign-in">
-                    <form action="http://localhost/task/wp-login.php" method="post">
-                        <p>signin credenntails</p>
-                        <input type="text" placeholder="Login" name="log" id="user_login" class="box-design">
-                        <input type="password" placeholder="password" name="pwd" id="user_pass" class="box-design">
-                        <input type="submit" value="ok" name="user-submit" class="red-btn-design">
-                        <input type="hidden" name="redirect_to" value="/<?php global $post;echo $post->post_name; ?>/">
-                        <input type="hidden" name="user-cookie" value="1">
-                        <p>Escused a senhai</p>
-                    </form>
+                    <?php if(!is_user_logged_in()){ ?>
+                        <form action="<?=get_home_url();?>/wp-login.php" method="post">
+                            <p>signin credenntails</p>
+                            <input type="text" placeholder="Login" name="log" id="user_login" class="box-design">
+                            <input type="password" placeholder="password" name="pwd" id="user_pass" class="box-design">
+                            <input type="submit" value="ok" name="user-submit" class="red-btn-design">
+                            <input type="hidden" name="redirect_to" value="/task/<?php global $post;echo $post->post_name; ?>/">
+                            <input type="hidden" name="user-cookie" value="1">
+                            <p>Escused a senhai</p>
+                        </form>
+                    <?php } else{ ?>
+                    <p>Welcome <?php echo wp_get_current_user()->user_login;}?>!</p>
+
                 </div>
                 <div id="foot">
                     <div id="left">
@@ -67,8 +71,8 @@
             </div>
             <nav class="fill-content">
                 <ul>
-                    <li><a href="http://localhost/task/quem-somos">QUEM SOMOS</a></li>
-                    <li><a href="http://localhost/task/fale-conosco">FALE CONOSCO</a></li>
+                    <li><a href="<?=get_home_url();?>/quem-somos">QUEM SOMOS</a></li>
+                    <li><a href="<?=get_home_url();?>/fale-conosco">FALE CONOSCO</a></li>
                 </ul>
             </nav>
             <div id="banner">
@@ -89,23 +93,23 @@
                         <div id="left">
                             <img src="<?=get_template_directory_uri();?>/images/home_main_section_left_image.jpg">
                             <h2>continuerr</h2>
-                            <p>industry. Lorem Ipsum has been the industry's standard dummy <a href="http://localhost/task/detail-1">go next</a></p>
+                            <p>industry. Lorem Ipsum has been the industry's standard dummy <a href="<?=get_home_url();?>/detail-1">go next</a></p>
                         </div>
                         <div id="right">
                             <ul>
                                 <li>
                                     <h2>PRSO SALARIAL</h2>
-                                    <p>ext ever since the 1500s, when an unknown printer took a <a href="http://localhost/task/detail-1">go next</a></p>
+                                    <p>ext ever since the 1500s, when an unknown printer took a <a href="<?=get_home_url();?>/detail-1">go next</a></p>
                                 </li>
                                 <hr>
                                 <li>
                                     <h2>PRSO SALARIAL</h2>
-                                    <p>ext ever since the 1500s, when an unknown printer took a <a href="http://localhost/task/detail-1">go next</a></p>
+                                    <p>ext ever since the 1500s, when an unknown printer took a <a href="<?=get_home_url();?>/detail-1">go next</a></p>
                                 </li>
                                 <hr>
                                 <li>
                                     <h2>PRSO SALARIAL</h2>
-                                    <p>ext ever since the 1500s, when an unknown printer took a <a href="http://localhost/task/detail-1">go next</a></p>
+                                    <p>ext ever since the 1500s, when an unknown printer took a <a href="<?=get_home_url();?>/detail-1">go next</a></p>
                                 </li>
                             </ul>
                         </div>

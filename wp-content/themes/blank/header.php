@@ -29,17 +29,17 @@
 		<div class="wrapper">
 			<div id="top-header">
 				<div id="logo">
-                    <a href="http://localhost/task"><img src="<?=get_template_directory_uri();?>/images/logo.jpg"></a>
+                    <a href="<?=get_home_url();?>"><img src="<?=get_template_directory_uri();?>/images/logo.jpg"></a>
 				</div>
 				<div id="search">
-                    <form action="http://localhost/task/" id="searchform" method="get">
+                    <form action="<?=get_home_url();?>" id="searchform" method="get">
                         <input type="text" placeholder="Search" name="s" id="s" class="box-design" style="width: 116px">
                         <input type="submit" value="Search" class="search-btn">
                     </form>
 				</div>
 				<div id="sign-in">
                     <?php if(!is_user_logged_in()){ ?>
-                    <form action="http://localhost/task/wp-login.php" method="post">
+                    <form action="<?=get_home_url();?>/wp-login.php" method="post">
                         <p>signin credenntails</p>
                         <input type="text" placeholder="Login" name="log" id="user_login" class="box-design">
                         <input type="password" placeholder="password" name="pwd" id="user_pass" class="box-design">
@@ -49,7 +49,7 @@
                         <p>Escused a senhai</p>
                     </form>
                     <?php } else{ ?>
-                    <p>Welcome <?php print_r( wp_get_current_user()->user_login); }?>!</p>
+                    <p>Welcome <?php echo wp_get_current_user()->user_login;}?>!</p>
 
 				</div>
 				<div id="foot">
@@ -67,8 +67,8 @@
 			</div>
 			<nav class="fill-content">
 				<ul>
-					<li><a href="http://localhost/task/quem-somos">QUEM SOMOS</a></li>
-					<li><a href="http://localhost/task/fale-conosco">FALE CONOSCO</a></li>
+					<li><a href="<?=get_home_url();?>/quem-somos">QUEM SOMOS</a></li>
+					<li><a href="<?=get_home_url();?>/fale-conosco">FALE CONOSCO</a></li>
 				</ul>
 			</nav>
 			<div id="banner">
