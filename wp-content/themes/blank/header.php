@@ -46,10 +46,10 @@
                         <input type="submit" value="ok" name="user-submit" class="red-btn-design">
                         <input type="hidden" name="redirect_to" value="/task/<?php global $post;echo $post->post_name; ?>/">
                         <input type="hidden" name="user-cookie" value="1">
-                        <p>Escused a senhai</p>
+<!--                        <p>Escused a senhai</p>-->
                     </form>
                     <?php } else{ ?>
-                    <p>Welcome <?php echo wp_get_current_user()->user_login;}?>!</p>
+                    <p>Welcome <?php echo wp_get_current_user()->user_login;}?></p>
 
 				</div>
 				<div id="foot">
@@ -69,6 +69,11 @@
 				<ul>
 					<li><a href="<?=get_home_url();?>/quem-somos">QUEM SOMOS</a></li>
 					<li><a href="<?=get_home_url();?>/fale-conosco">FALE CONOSCO</a></li>
+                    <li><a href="#">bla</a></li>
+                    <li><a href="#">bla</a></li>
+                    <li><a href="#">bla</a></li>
+                    <li><a href="#">bla</a></li>
+                    <li><a href="#">bla</a></li>
 				</ul>
 			</nav>
 			<div id="banner">
