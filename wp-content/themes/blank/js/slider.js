@@ -1,9 +1,3 @@
 /**
- * Created by MYounas on 8/28/2016.
+ * Created by MY on 9/8/2016.
  */
-
-$(function () {
-   $("#services#img").hover(function () {
-        alert("hover");
-    }) ;
-});

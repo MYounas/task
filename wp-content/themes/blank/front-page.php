@@ -12,7 +12,7 @@
  * @package blank
  */
 
-//get_header(); ?>
+?>
 
 <html <?php language_attributes(); ?>>
     <head>
@@ -50,7 +50,6 @@
                             <input type="submit" value="ok" name="user-submit" class="red-btn-design">
                             <input type="hidden" name="redirect_to" value="/task/<?php global $post;echo $post->post_name; ?>/">
                             <input type="hidden" name="user-cookie" value="1">
-<!--                            <p>Escused a senhai</p>-->
                         </form>
                     <?php } else{ ?>
                     <p>Welcome <?php echo wp_get_current_user()->user_login;}?></p>
@@ -88,8 +87,6 @@
 
     <div id="content" class="site-content wrapper">
 
-<!--    <div id="primary" class="content-area">-->
-<!--        <main id="main" class="site-main" role="main">-->
             <div id="content" class="wrapper">
                 <h1>NOTICAS/</h1>
 
@@ -153,9 +150,5 @@
                 </section>
             </div>
 
-<!--        </main>-->
-<!--    </div>-->
-
 <?php
-//get_sidebar();
 get_footer();
